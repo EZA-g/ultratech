@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultratech Cadastrar</title>
+</head>
+
+<body>
+    <h1>Ultratech</h1>
+    <h3><ins>Mais que um hobby</ins></h3>
+    <hr>
+    <a href="home.html">Voltar</a>
+
+    <h2>Cadastro</h2>
+
+    <fieldset>
+        <legend>Preencha os campos abaixo para se cadastrar:</legend>
+        <form action="processar_cadastro.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+
+            <label for="time">Time de coração:</label>
+            <input type="text" id="time" name="time" required><br><br>
+
+            <label for="personagem">personagem favorito:</label>
+            <input type="text" id="personagem" name="personagem" required><br><br>
+
+            <label for="inicial">melhor inicial:</label>
+            <select id="inicial" name="inicial" required>
+                <option value="">Selecione</option>
+                <option value="Bulbasaur">Bulbasauro</option>
+                <option value="Charmander">Charmander</option>
+                <option value="Squirtle">Squirtle</option>
+            </select>
+            <br><br>
+
+            <input type="radio" name="termos" value="1" /> Masculino
+            <input type="radio" name="termos" value="2" /> Feminino
+            <input type="radio" name="termos" value="3" /> Indefinido
+            <br><br>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </fieldset>
+    <br>
+    <a href="login.html">Já possui conta?</a>
+</body>
+
+</html>
